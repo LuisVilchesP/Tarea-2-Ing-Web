@@ -1,0 +1,46 @@
+body {
+  margin: 10px;
+  font-size: 12px;
+}
+
+form ul {
+  list-style-type: none;
+}
+
+/*input{
+    width: 100%;
+    height: 30px;
+}
+*/
+.container-fluid {
+  background-color: #d7e5fa;
+}
+
+.container-fluid form ul li {
+  margin: 10px;
+}
+
+body {
+  background-color: beige;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#nombre {
+  width: 50%;
+}
+
+#correo {
+  width: 50%;
+}
+
+#rut {
+  width: 50%;
+}
+
+#telefono {
+  width: 50%;
+}
+/*# sourceMappingURL=estilos.css.map */

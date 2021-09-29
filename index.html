@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/estilos.css" rel="stylesheet">
+        <!--Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1>Formulario Ingeniería Informática</h1>
+            <form form class="row g-3 needs-validation" novalidate>
+                <ul>
+                    <li>
+                        <label>Nombre Completo</label>
+                        <input type="text" id="nombre" class="form-control" maxlength="30" placeholder="Digite su nombre completo" required>                      
+                            <div class="valid-feedback">
+                                Campo correcto.
+                            </div>
+                            <div class="invalid-feedback">
+                                Campo incorrecto.
+                            </div>
+                    </li>
+                    <li>
+                        <div class="col"></div>
+                        <label>Rut</label>
+                        <input type="text" class="form-control" id="rut" maxlength="10" placeholder="Ej: 1234657-8" pattern="[0-9]+-[0-9K]+" required>
+                        <div class="valid-feedback">
+                            Campo correcto.
+                        </div>
+                        <div class="invalid-feedback">
+                            Campo incorrecto.
+                          </div>
+                    </li>
+                    <li>
+                        <label>Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" maxlength="50" placeholder="ejemplo@ejemplo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <div class="valid-feedback">
+                            Campo correcto.
+                        </div>
+                        <div class="invalid-feedback">
+                            Campo incorrecto.
+                          </div>
+                    </li>
+                    <li>
+                        <label>Teléfono Móvil</label>
+                        <input type="tel" class="form-control" id="telefono" minlength="9" maxlength="9" placeholder="Formato 9 dígitos" required>
+                        <div class="valid-feedback">
+                            Campo correcto.
+                        </div>
+                        <div class="invalid-feedback">
+                            Campo incorrecto.
+                          </div>
+                    </li>
+                    <li>
+                        <label>Seleccionar uno o más lenguajes de programación de interés</label>
+                        <select  id="lenginteres" required>
+                            <option></option>
+                            <option>Python</option>
+                            <option>Typescript</option>
+                            <option>C++</option>
+                            <option>C#</option>
+                            <option>PHP</option>
+                            <option>Ruby on Rails</option>
+                            <option>Java</option>
+                            <option>R</option>
+                            <option>Groovy</option>
+                            <option>Go</option>
+                            <option>Swift</option>
+                            <option>Kotlin</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>¿Cuál es su nivel de experiencia en programación?</label> <br>
+                        
+                            <input type="radio" id="nivelbasico" name="nivelprog" value="1" required/>Básico &nbsp
+                            <input type="radio" id="nivelmedio" name="nivelprog" value="2"/ required>Medio &nbsp
+                            <input type="radio" id="nivelavanzado" name="nivelprog" value="3" required/>Avanzado &nbsp
+                    </li>
+                    <li>
+                        <label>Nivel de conocimiento sobre los siguientes lenguajes de programación: </label> <br>
+                        Python <br> <input type="range" min="0" max="20"/> <br>
+                        Java <br> <input type="range" min="0" max="20"/> <br>
+                        C++ <br> <input type="range" min="0" max="20"/>  
+
+                    </li>
+                    <li>
+                        <label>Seleccione cuál de los siguientes cursos les ha tomado mayor dificultad</label> <br>
+                        <input type="checkbox" id="cursosdificiles"> Estructura de Datos <br>
+                        <input type="checkbox" id="cursosdificiles"> Inteligencia Artifical <br>
+                        <input type="checkbox" id="cursosdificiles"> Interacción Humano-Computador <br>
+                        <input type="checkbox" id="cursosdificiles"> Sistemas Operativos <br>
+                        Otro (especifique) <input type="text" id="cursosdificiles"> 
+
+                    </li>
+                    <li>
+                        <label>Queremos conocer su opinión a cerca de la escuela</label><br>
+                        <textarea id="opinion" maxlength="500" rows="4" cols="80"></textarea>
+                    </li>
+
+                    <li>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                        <button class="btn btn-primary" type="reset">Cancelar</button>
+                    </li>
+                </ul>
+
+
+            </form>
+        </div>
+
+        <script src="ts/inicio.js" async></script>
+        <script data-main="ts/inicio.js" src="ts/require-jquery.js"></script>
+
+    </body>
+</html>
